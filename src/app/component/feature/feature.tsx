@@ -1,5 +1,6 @@
 import React from "react";
-import { MdOutlineTouchApp } from "react-icons/md";
+import { MdOutlineDesignServices, MdOutlineSecurity, MdOutlineSettings, MdOutlineTouchApp } from "react-icons/md";
+import FeatureCard from "../fragment_feature/feats";
 
 export default function Feature() {
     return (
@@ -14,25 +15,29 @@ export default function Feature() {
             </div>
             {/* container */}
             <div className="w-[80%] mx-auto mt-16 grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                    {/* 1st feature */}
-                    <div className="bg-white p-4 rounded-lg">
-                        <div className="flex items-center space-x-3">
-                            {/* icon */}
-                            <div className="w-12 h-12 rounded-3xl flex items-center justify-center flex-col bg-pink-500 bg-opacity-20">
-                                <MdOutlineTouchApp className=" w-6 h-6 text-purple-400"/>
-                            </div>
-                            {/* heading */}
-                            <h1 className=" text-lg font-bold text-gray-700">App Integration</h1>
-                           
-                        </div>
-                        <p className="mt-3 mb-3 text-gray-800 leading-relaxed">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nostrum enim hic a ab ratione architecto adipisci quo laborum ipsum eaque sed impedit eligendi illo id alias, quisquam iste voluptatem!
-                        </p>
-                        
-                    </div>
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <FeatureCard 
+                    icon={MdOutlineTouchApp} 
+                    heading="App Integration" 
+                    description="Integrate your favorite apps seamlessly with our system."
+                />
+                <FeatureCard 
+                    icon={MdOutlineSettings} 
+                    heading="Custom Settings" 
+                    description="Easily customize your experience with advanced configuration tools."
+                />
+                <FeatureCard 
+                    icon={MdOutlineDesignServices} 
+                    heading="Creative Design" 
+                    description="Unlock creative potential with intuitive design features."
+                />
+                <FeatureCard 
+                    icon={MdOutlineSecurity} 
+                    heading="Advanced Security" 
+                    description="Protect your data with state-of-the-art encryption."
+                />
                 </div>
-            </div>
+             </div>
         </div>
     )
 }
