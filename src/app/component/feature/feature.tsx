@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineDesignServices, MdOutlineSecurity, MdOutlineSettings, MdOutlineTouchApp } from "react-icons/md";
 import FeatureCard from "../fragment_feature/feats";
+import Image from "next/image";
 
 export default function Feature() {
     return (
@@ -37,7 +38,16 @@ export default function Feature() {
                     description="Protect your data with state-of-the-art encryption."
                 />
                 </div>
-             </div>
+                {/* image content */}
+                <div>
+                    <Image
+                    src="/images/feature.jpg"
+                    alt="feature"
+                    width={700}
+                    height={700}
+                    />
+                </div>
+            </div>
         </div>
     )
 }
