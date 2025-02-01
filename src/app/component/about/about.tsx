@@ -23,7 +23,7 @@ export default function About() {
                     <button className="mt-5 text-[#f68967] font-bold pb-1 border-b-2 border-[#f68967]">Learn more &#8594;</button>
                     <div className="mt-8 border-l-2 border-slate-600">
                         <div className="ml-6 ">
-                            <p className="text-slate-500 font-medium">&quot; If you stop when you're not good at it, then when you'll be good at it? &quot;</p>
+                        <p className="text-slate-500 font-medium">&quot; If you stop when you&apos;re not good at it, then when you&apos;ll be good at it? &quot;</p>
                             <div className="flex items-center space-x-6 mt-6">
                                 <Image
                                 src="/images/profile.jpg"
